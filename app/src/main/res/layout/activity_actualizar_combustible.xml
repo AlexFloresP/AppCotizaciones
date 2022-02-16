@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoblanco"
+    tools:context=".ActualizarCombustible">
+
+
+    <Button
+        android:id="@+id/btnGuardarActualizarCombustible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editarActualizarPrecioCombustible" />
+
+    <EditText
+        android:id="@+id/editarActualizarCombustible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarNombreAccesorio"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="224dp"
+        android:hint="Combustible"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editarActualizarPrecioCombustible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarNombreAccesorio"
+        android:layout_alignParentLeft="true"
+        android:hint="Costo combustible por litro"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/editarActualizarCombustible"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ingrese el costo del combustible por litro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="139dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_gas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

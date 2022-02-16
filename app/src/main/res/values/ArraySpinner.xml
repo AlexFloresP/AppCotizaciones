@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Selecione el tipo de maquinaria</item>
+        <item>Maquinaria para construccion</item>
+       <item>Fletes y viajes</item>
+    </string-array>
+</resources>

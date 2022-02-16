@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alex.mycot">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_maquinaa"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+
+        <activity android:name=".GenerarPdfFlete"></activity>
+        <activity android:name=".ActualizarPrecioFlete" />
+        <activity android:name=".FueraZona" />
+        <activity android:name=".ZonaLocal" />
+        <activity android:name=".SeleccionZona" />
+        <activity android:name=".GenerarPdf" />
+        <activity android:name=".CotizarFlete" />
+        <activity android:name=".SeleccionTiempoOperador" />
+        <activity android:name=".ActualizarCamion" />
+        <activity android:name=".SeleccionarAccesorios" />
+        <activity android:name=".SeleccionarMaquina" />
+        <activity android:name=".ActualizarSueldoOperador" />
+        <activity android:name=".ActualizarCombustible" />
+        <activity android:name=".AgregarAccesorioAct" />
+        <activity android:name=".Actualizar_Accesorios" />
+        <activity android:name=".Listar_accesorios" />
+        <activity android:name=".ActualizarMaquina" />
+        <activity android:name=".Lista_Actualizar" />
+        <activity android:name=".Acerca_de" />
+        <activity android:name=".AgregarAccesorios" />
+        <activity android:name=".AgregarMaquina" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

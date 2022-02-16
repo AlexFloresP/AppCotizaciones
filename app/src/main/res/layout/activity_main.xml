@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoblanco"
+
+
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="352dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        fab:srcCompat="@drawable/encabezadoooooooo" />
+
+    <LinearLayout
+        android:layout_width="283dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/cotizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cotizar renta de maquinaria o flete de material" />
+
+        <Button
+            android:id="@+id/cotizarFletefuera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cotizar flete " />
+
+        <Button
+            android:id="@+id/agregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Maquina" />
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/famMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="5dp"
+        app:fab_labelStyle="@style/etiqueta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="@color/colorPrimaryDark"
+        app:menu_fab_label="ACtualizar"
+
+
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAcercaDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_acerca_de"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_size="mini"
+            app:fab_title="Acerca de"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnActualizarMaquina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_excavador"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_size="normal"
+            app:fab_title="Actualizar Maquina" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnActualizarCostoGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gas"
+
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_size="mini"
+            app:fab_title="Actualizar costo combustible" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnActualizarCostoOperador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trabajador"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_size="mini"
+            app:fab_title="Actualizar sueldo operador" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnActualizarCostoFletes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camion"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_size="mini"
+            app:fab_title="Actualizar costos de fletes" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

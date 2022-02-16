@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoblanco"
+    tools:context=".ActualizarPrecioFlete">
+
+    <Button
+        android:id="@+id/btnGuardarCostoFlete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Actualizar precios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editarActualizarPrecioExtraFlete" />
+
+    <EditText
+        android:id="@+id/editarActualizarPrecioExtraFlete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarNombreAccesorio"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="28dp"
+        android:hint="Costo despues del kilometro"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/editarActualizarPrecioBaseFlete"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editarActualizarPrecioBaseFlete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editarNombreAccesorio"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="104dp"
+        android:hint="Costo primer kilometro"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Ingresa los costos extra por concepto de fletes."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
